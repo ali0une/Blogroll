@@ -3,7 +3,7 @@
  * Plugin blogroll w/ favicon
  *
  * @package	PLX
- * @version	1.0
+ * @version	1.1
  * @date	11/03/2013
  * @author	i M@N
  * @based on	Rockyhorror Blogroll 0.5

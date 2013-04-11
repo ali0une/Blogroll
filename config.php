@@ -2,10 +2,11 @@
 /**
  * Plugin blogroll
  *
- * @package     PLX
- * @version     0.5
- * @date        20/03/2013
- * @author      rockyhorror
+ * @package	PLX
+ * @version	1.1
+ * @date	11/03/2013
+ * @author	i M@N
+ * @based on	Rockyhorror Blogroll 0.5
  **/
  
 	if(!defined('PLX_ROOT')) exit; 
