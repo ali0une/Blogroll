@@ -177,6 +177,11 @@ class Blogroll extends plxPlugin {
 
 	public function showBlogroll($format) {		
 		
+if (extension_loaded('curl')) {
+/*check for curl*/
+	$curl = 1;
+	#echo 'curl : '.$curl;//yeah that's just 4 debug ; )
+}
 		$this->getBlogroll(PLX_ROOT.$this->getParam('blogroll'));
 		if(!$this->blogList) { return; }
 		
@@ -188,7 +193,12 @@ $this->grab_image('http://g.etfv.co/'.$link['url'],md5($link['url']).'.ico');
 ##			$row = str_replace('"#url"','"#url" onclick="window.open(this.href);return false;"',$format);
 			$row = str_replace('"#url"','"#url"',$format);
 			$row = str_replace('#url',$link['url'],$row);
+if ($curl == 1) {
 			$row = str_replace('#icon',PLX_PLUGINS.'Blogroll/favicon/'.md5($link['url']).'.ico',$row);
+}
+else {
+			$row = str_replace('#icon','http://g.etfv.co/'.$link['url'],$row);
+}
 			$row = str_replace('#description',plxUtils::strCheck($link['description']),$row);
 			$row = str_replace('#title',plxUtils::strCheck($link['title']),$row);
 			$row = str_replace('#langue',plxUtils::strCheck($link['langue']),$row);
