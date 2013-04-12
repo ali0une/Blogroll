@@ -3,8 +3,8 @@
  * Plugin blogroll w/ favicon
  *
  * @package	PLX
- * @version	1.1
- * @date	11/03/2013
+ * @version	1.2
+ * @date	12/03/2013
  * @author	i M@N
  * @based on	Rockyhorror Blogroll 0.5
  **/
@@ -186,7 +186,7 @@ if (extension_loaded('curl')) {
 		if(!$this->blogList) { return; }
 		
 #		if(!isset($format)) { $format = '<li><a href="#url" hreflang="#langue" title="#description">#title</a></li>'; }
-		if(!isset($format)) { $format = '<li style="background:url(\'#icon\') no-repeat scroll 0 5px transparent;padding-left:20px;background-size:16px 16px;"><a target="_blank" href="#url" hreflang="#langue" title="#description">#title</a></li>'; }
+		if(!isset($format)) { $format = '<li style="background:url(\'#icon\') no-repeat scroll 0 0 transparent;padding-left:20px;background-size:16px 16px;"><a target="_blank" href="#url" hreflang="#langue" title="#description">#title</a></li>'; }
 		foreach($this->blogList as $link) {
 /*get favicon*/
 $this->grab_image('http://g.etfv.co/'.$link['url'],md5($link['url']).'.ico');

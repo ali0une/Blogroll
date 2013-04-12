@@ -18,7 +18,7 @@ Editez le fichier template "sidebar.php". Ajoutez y le code suivant &agrave; l&#
 <pre>
 	&lt;h3&gt;&lt;?php eval($plxShow-&gt;callHook(&#039;showBlogrollHead&#039;)); ?&gt;&lt;/h3&gt;
 		&lt;ul&gt;
-&lt;?php eval($plxShow-&gt;callHook('showBlogroll', '&lt;li style="background:url(\'#icon\') no-repeat scroll 0 5px transparent;padding-left:20px;background-size:16px 16px;"&gt;
+&lt;?php eval($plxShow-&gt;callHook('showBlogroll', '&lt;li style="background:url(\'#icon\') no-repeat scroll 0 0 transparent;padding-left:20px;background-size:16px 16px;"&gt;
 &lt;a target="_blank" href="#url" hreflang="#langue" title="#description"&gt;#title&lt;/a&gt;
 &lt;/li&gt;')); ?&gt;
 		&lt;/ul&gt;
